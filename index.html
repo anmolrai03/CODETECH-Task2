@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TO-DO List</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2387/2387635.png" type="png">
+    </head>
+    <body>
+
+        <main class="wrapper">
+            <h1>TO-DO List</h1>
+            <section class="input-area">
+                <input type="text" placeholder="Add task ...">
+                <button>ADD</button>
+            </section>
+            <section class="tasks">
+                <p>
+                    <span class="task-remaining">3</span>
+                    Task(s) yet to be completed.
+                </p>
+                <ul class="uncomplete-tasks">
+                    <li>Task 1</li>
+                    <li>task 2</li>
+                    <li>task 3</li>
+                </ul>
+                <hr>
+                <ul class="completed-tasks">
+                    <li>Task 4</li>
+                </ul>
+            </section>
+        </main>
+        <div class="error">
+            Input field cannot be empty.
+        </div>
+
+        <!-- SCRIPT -->
+        <script src="script.js"></script>
+    </body>
+</html>
