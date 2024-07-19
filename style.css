@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-family: "Poppins",sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -46,33 +46,31 @@ body{
     /* border: 2px solid brown; */
     width: 100%;
     display: flex;
-    /* gap: 8px; */
-    background-color: white;
-    padding: 3px 6px;
-    border-radius: 24px;
+    /* border-radius: 24px; */
+    margin-bottom: 10px;
     align-items: center;
-    justify-content:space-between;
-    border-bottom: 2px solid grey;
-
+    justify-content: center;
+    column-gap: 10px;
 }
 
 .input-area input{
-    width: 80%;
-    text-align: center;
-    padding: 8px 0px;
+    width: 60%;
+    padding: 6px 10px;
     border: none;
     outline: none;
-    border-radius: 24px;
     font-size: 15px;
     color: black;
-    margin-bottom: 10px;
-    /* border-bottom: 1px solid grey; */
+    border-bottom: 2px solid #d8d1d1;
+    background: transparent;
 }
 
 
-
+.input-area input:focus{
+    border-color: rgb(15, 242, 15);
+}
 
 .input-area button{
+    width: min(40% , 80px);
     padding: 6px 14px;
     border: none;
     outline: none;
@@ -85,8 +83,12 @@ body{
 
 .input-area button:hover{
     background-color: rgb(5, 171, 16);
-    /* color: rgb(15, 242, 15); */
 }
+
+
+
+/* TASKS AREA */
+
 
 .tasks{
     border: 2px solid orangered;
@@ -99,4 +101,77 @@ body{
     font-size: 18px;
     font-weight: 600;
     margin: 8px auto;
+}
+
+/* li{
+    list-style: none;
+} */
+
+.tasks img{
+    height: 20px;
+    width: 20px;
+}
+
+.tasks ul li{
+    display: flex;
+    /* border: 1px solid black; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 6px;
+    list-style: none;
+    
+    /* column-gap: 6px; */
+}
+.uncompleted-tasks{
+    border-top: 2px solid #d8d1d1;
+    margin-top: 13px;
+}
+
+
+/* GENERATED INSIDE JS */
+.task-data{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.task-status{
+    display: flex;
+}
+
+.task-msg{
+    display: flex;
+    font-weight: 500;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+.edit-icon{
+    display: flex;
+}
+
+.delete-icon{
+    display: flex;
+}
+/* TILL HERE */
+
+
+
+/* UNCOMPLETE SECTION ALSO GENERATED VIA JS */
+.completed-tasks{
+    margin-top: 18px;
+}
+/* TILL HERE */
+
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    /* align-self: center; */
+    /* width: min(400px , 95vw); */
 }

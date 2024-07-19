@@ -6,6 +6,8 @@
         <title>TO-DO List</title>
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2387/2387635.png" type="png">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
 
@@ -17,11 +19,27 @@
             </section>
             <section class="tasks">
                 <p>
-                    <span class="task-remaining">3</span>
+                    You have <span class="task-remaining">3</span>
                     Task(s) yet to be completed.
                 </p>
-                <ul class="uncomplete-tasks">
-                    <li>Task 1</li>
+                <ul class="uncompleted-tasks">
+                    <li>
+                        <span class="task-data">
+                            <span class="task-status">
+                                <img src="https://cdn-icons-png.flaticon.com/512/15476/15476717.png" alt="uncheched" class="unchecked">
+                            </span>
+                            <span class="task-msg">Complete your js projects</span>
+                        </span>
+                        
+                        <span class="options">
+                            <span class="edit-icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1160/1160515.png" alt="edit">
+                            </span>
+                            <span class="delete-icon">
+                                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png" alt="delete">
+                            </span>
+                        </span>
+                    </li>
                     <li>task 2</li>
                     <li>task 3</li>
                 </ul>
@@ -34,7 +52,6 @@
         <div class="error">
             Input field cannot be empty.
         </div>
-
         <!-- SCRIPT -->
         <script src="script.js"></script>
     </body>
