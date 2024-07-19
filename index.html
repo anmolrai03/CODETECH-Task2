@@ -14,15 +14,15 @@
         <main class="wrapper">
             <h1>TO-DO List</h1>
             <section class="input-area">
-                <input type="text" placeholder="Add task ...">
-                <button>ADD</button>
+                <input type="text" placeholder="Add task ..." class="js-input-section">
+                <button class="js-btn">ADD</button>
             </section>
-            <section class="tasks">
+            <section class="tasks js-tasks">
                 <p>
-                    You have <span class="task-remaining">3</span>
+                    You have <span class="task-remaining"></span>
                     Task(s) yet to be completed.
                 </p>
-                <ul class="uncompleted-tasks">
+                <ul class="uncompleted-tasks js-uncomplete-tasks">
                     <li>
                         <span class="task-data">
                             <span class="task-status">
@@ -40,8 +40,6 @@
                             </span>
                         </span>
                     </li>
-                    <li>task 2</li>
-                    <li>task 3</li>
                 </ul>
                 <hr>
                 <ul class="completed-tasks">
@@ -49,7 +47,7 @@
                 </ul>
             </section>
         </main>
-        <div class="error">
+        <div class="error js-error">
             Input field cannot be empty.
         </div>
         <!-- SCRIPT -->
