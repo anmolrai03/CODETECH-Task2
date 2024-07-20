@@ -147,6 +147,8 @@ body{
 .task-msg{
     display: flex;
     font-weight: 500;
+    /* text-decoration: line-through; */
+    /* text-decoration-color: rgb(15, 242, 15); */
 }
 
 .options{
@@ -161,6 +163,23 @@ body{
 
 .delete-icon{
     display: flex;
+}
+
+.delete-icon:hover{
+    animation: bubble 0.2s ease infinite alternate forwards;
+    /* padding: 3px; */
+    /* box-sizing: content-box; */
+    border-radius: 50%;
+    background-color: #d8d1d1;
+}
+
+@keyframes bubble {
+    from{
+        padding: 3px;
+    }
+    to {
+        padding: 5px;
+    }
 }
 /* TILL HERE */
 
@@ -190,6 +209,7 @@ body{
     
     background-color: red;
     color: white;
+    /* text-decoration: line-through; */
 }
 
 .shake-animation{
