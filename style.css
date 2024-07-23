@@ -158,7 +158,8 @@ body{
     gap: 18px;
 }
 .edit-icon{
-    display: flex;
+    display: hidden;
+    /* <img src="https://cdn-icons-png.flaticon.com/512/1160/1160515.png" alt="edit" class="edit-icon"> */
 }
 
 .delete-icon{
