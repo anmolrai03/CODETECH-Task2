@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(#ffd55c 50%, #5a95ff 50%);
+            height: 100vh;
+        }
+        .wrapper{
+            background-color: bisque;
+            width: min(300px , 30vw);
+            height: min(400px , 40vh);
+            margin: 20px auto;
+            padding: 8px;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden scroll;
+        }
+
+        .wrapper::-webkit-scrollbar{
+            height: 0;
+            width: 0;
+        }
+        @keyframes shake {
+            0%{
+                transform: translateX(0px);
+            }
+            25%{
+                transform: translateX(25px);
+            }
+            50%{
+                transform: translateX(0px);
+            }
+            75%{
+                transform: translateX(-25px);
+            }
+        }
+
+        .wrapper:hover{
+            animation: shake 0.2s ease-in-out 2 alternate;
+            border: 2px solid red;
+        }
+
+        .image img{
+            height: 20px;
+            width: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        Input is empty
+    </div>
+
+    <div class="image">
+        <img src="https://cdn-icons-png.flaticon.com/512/14090/14090371.png" alt="" class="checked">
+    </div>
+
+    <script>
+        const imageEle = document.querySelector('.image');
+        const imagetoChangeEle = document.querySelector('.checked');
+        console.log(imagetoChangeEle)
+
+        imageEle.addEventListener('click' , (e) => {
+            changeImage(imagetoChangeEle);
+        });
+
+        // imageEle.addEventListener('click' , changeImage(imagetoChangeEle));
+
+        function sayHello(name) {
+            console.log('helloWorld'+ name);
+        }
+
+        function changeImage(imageElement) {
+            if(imageElement.className === 'checked'){
+                imageElement.setAttribute('src' , 'https://cdn-icons-png.flaticon.com/512/15476/15476717.png');
+            } else{
+                imageElement.setAttribute('src' , 'https://cdn-icons-png.flaticon.com/512/14090/14090371.png');
+            }
+            imageElement.classList.toggle('checked');
+        }
+
+    </script>
+</body>
+</html>
